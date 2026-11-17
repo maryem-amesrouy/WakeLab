@@ -8,32 +8,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.21.1/axios.min.js" integrity="sha512-YiweniDPqprdTP7mvKVpKWv3jMGTY9frHzOTmDqbutoqcypYCRo8nfKhhDKnSiXTTMN0kBrDtTozIlM11wqcAg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+    <div id="enregistrement" class="fixed hidden bg-black/50 flex items-center justify-center z-50 p-6 inset-0" >
+        <div class="bg-white  border border-black-200 rounded-lg  m-8 p-6 flex flex-col items-center justify-center w-[600px] h-[400px] shadow-lg gap-5  ">
+        
+            <div class="flex flex-col  items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 w-10 h-10 bg-[#C8D9E6] rounded-lg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                </svg>
+                <h2 class="text-[25px] font-bold">Bienvenue parmi nous</h2>
+                <p class="text-[13px] text-gray-400"> Votre nom apparaîtra sur vos activités.</p>
+            </div>
 
-    <div id="enregistrement" class="fixed inset-0 z-50 hidden bg-black-50 border border-black-200 rounded-lg  m-8 p-6 flex flex-col items-center justify-center w-[600px] h-[400px] shadow-lg gap-5 relative">
-        <form>
-        <div class="flex flex-col  items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7 w-10 h-10 bg-[#C8D9E6] rounded-lg">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
-            </svg>
-            <h2 class="text-[25px] font-bold">Bienvenue parmi nous</h2>
-            <p class="text-[13px] text-gray-400"> Votre nom apparaîtra sur vos activités.</p>
-        </div>
+            <div>
+                <form action=""  class="flex flex-col gap-5 ">
+                    <div class="flex flex-col gap-2">
+                        <label for="nom" class="font-bold text-gray-600" >Nom complet</label>
+                        <input type="text" id="nom" class="border border-black w-80 h-8 rounded-lg p-5 " placeholder="Ex.Maryem Amesrouy">
+                        <!-- <input type="submit" value="Enregistrer mon nom > " class="border border-gray w-80 h-8 bg-[#6EA2B3] rounded-lg"> -->
+                    </div>
+                <button class="font-bold border border-gray w-80 h-8 bg-[#6EA2B3] rounded-lg p-5 flex justify-center items-center " id="enregistrementNom" ><a href="#">Enregistrer mon nom</a></button>
+                
+                
+            </div>
 
-        <div>
-            <form action=""  class="flex flex-col gap-5 ">
-                <div class="flex flex-col gap-2">
-                    <label for="nom" class="font-bold text-gray-600" >Nom complet</label>
-                    <input type="text" id="nom" class="border border-black w-80 h-8 rounded-lg p-5 " placeholder="Ex.Maryem Amesrouy">
-                    <!-- <input type="submit" value="Enregistrer mon nom > " class="border border-gray w-80 h-8 bg-[#6EA2B3] rounded-lg"> -->
-                 </div>
-              <button class="font-bold border border-gray w-80 h-8 bg-[#6EA2B3] rounded-lg p-5 flex justify-center items-center " ><a href="#">Enregistrer mon nom</a></button>
+            <p class="text-[11px] text-gray-400">Enregistré uniquement dans votre navigateur.</p>
             </form>
             
         </div>
-
-        <p class="text-[11px] text-gray-400">Enregistré uniquement dans votre navigateur.</p>
-        </form>
-        
     </div>
 
 
@@ -41,7 +42,7 @@
 
 
 
-    <nav class="flex justify-around">
+    <nav class="flex justify-around p-4">
         <div id="logo" class="flex items-center">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-8"><path d="M11.7 2.805a.75.75 0 0 1 .6 0A60.65 60.65 0 0 1 22.83 8.72a.75.75 0 0 1-.231 1.337 49.948 49.948 0 0 0-9.902 3.912l-.003.002c-.114.06-.227.119-.34.18a.75.75 0 0 1-.707 0A50.88 50.88 0 0 0 7.5 12.173v-.224c0-.131.067-.248.172-.311a54.615 54.615 0 0 1 4.653-2.52.75.75 0 0 0-.65-1.352 56.123 56.123 0 0 0-4.78 2.589 1.858 1.858 0 0 0-.859 1.228 49.803 49.803 0 0 0-4.634-1.527.75.75 0 0 1-.231-1.337A60.653 60.653 0 0 1 11.7 2.805Z" /><path d="M13.06 15.473a48.45 48.45 0 0 1 7.666-3.282c.134 1.414.22 2.843.255 4.284a.75.75 0 0 1-.46.711 47.87 47.87 0 0 0-8.105 4.342.75.75 0 0 1-.832 0 47.87 47.87 0 0 0-8.104-4.342.75.75 0 0 1-.461-.71c.035-1.442.121-2.87.255-4.286.921.304 1.83.634 2.726.99v1.27a1.5 1.5 0 0 0-.14 2.508c-.09.38-.222.753-.397 1.11.452.213.901.434 1.346.66a6.727 6.727 0 0 0 .551-1.607 1.5 1.5 0 0 0 .14-2.67v-.645a48.549 48.549 0 0 1 3.44 1.667 2.25 2.25 0 0 0 2.12 0Z" /><path d="M4.462 19.462c.42-.419.753-.89 1-1.395.453.214.902.435 1.347.662a6.742 6.742 0 0 1-1.286 1.794.75.75 0 0 1-1.06-1.06Z" />
             </svg>
@@ -55,8 +56,11 @@
                 <li>Apropos</li>
             </ul>
         </div>
-        <div>
-            
+        <div id="user" class="flex justify-center items-center cursor-pointer bg-gray-300 text-white font-bold text-[17px] border rounded-lg w-60 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+             <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L6.832 19.82a4.5 4.5 0 0 1-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 0 1 1.13-1.897L16.863 4.487Zm0 0L19.5 7.125" />
+             </svg>
+             <p>maryem amesrouy</p>
         </div>
     </nav>
 
@@ -97,6 +101,9 @@
 
         </div>
 
+
+
+        
         <div id="cartdLivre" class="  grid grid-cols-3 gap-5 " >
         <div class="border-2 border-black rounded-lg  h-[300px] p-5">
 
